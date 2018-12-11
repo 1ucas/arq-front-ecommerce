@@ -1,7 +1,7 @@
 <div class="container-do-lucas">
   <div class="row">
-    <div class="col-xs-12">
-      <h3>Loja do Lucas</h3>
+    <div class="col-xs-8">
+      <app-home-carousel></app-home-carousel>
     </div>
   </div>
   <div class="row">
@@ -11,14 +11,18 @@
           <div class="row">
             <div class="col-xs-12">
               <a href="" data-toggle="collapse"><h4>Seção - Livros</h4></a>
-              <app-product-list class="collapse in">
+              <app-product-list 
+                [produtos]=livros
+                class="collapse in">
               </app-product-list>
             </div>
           </div>
           <div class="row">
               <div class="col-xs-12">
                 <a href="" data-toggle="collapse"><h4>Seção - Filmes</h4></a>
-                <app-product-list class="collapse in">
+                <app-product-list
+                  [produtos]=filmes
+                  class="collapse in">
                 </app-product-list>
               </div>
             </div>
