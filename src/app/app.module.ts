@@ -11,6 +11,7 @@ import { ProductItemComponent } from './homepage/product-list/product-item/produ
 import { DetailpageComponent } from './detailpage/detailpage.component';
 import { SideInfosComponent } from './homepage/side-infos/side-infos.component';
 import { HomeCarouselComponent } from './homepage/home-carousel/home-carousel.component';
+import { ProductDetailComponent } from './detailpage/product-detail/product-detail.component';
 
 const appRoutes: Routes = [
   { path: 'detail/:id', component: DetailpageComponent },
@@ -26,7 +27,8 @@ const appRoutes: Routes = [
     ProductItemComponent,
     DetailpageComponent,
     SideInfosComponent,
-    HomeCarouselComponent
+    HomeCarouselComponent,
+    ProductDetailComponent
   ],
   imports: [
     RouterModule.forRoot(

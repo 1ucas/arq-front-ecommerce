@@ -1,7 +1,16 @@
 <div class="container-do-lucas">
   <div class="row">
-    <div class="col-xs-12">
-      <p>Produto - {{produto.id}}</p>
-    </div>
+    <div class="col-xs-6">
+      <img src="../../assets/images/image1.png" class="imagem-produto">
+    </div>  
+    <div class="col-xs-6">
+        <p>Produto - {{produto.id}}</p>
+      </div>
+  </div>
+  <div class="alert alert-success center-block" role="alert">
+    <strong>Sucesso!</strong> Você comprou o produto.
+  </div>
+  <div class="alert alert-warning center-block" role="alert">
+    <strong>Ops!</strong> Sistema de cartões temporariamente fora do ar.
   </div>
 </div>
