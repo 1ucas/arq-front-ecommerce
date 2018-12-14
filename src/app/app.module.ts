@@ -13,9 +13,11 @@ import { SideInfosComponent } from './homepage/side-infos/side-infos.component';
 import { HomeCarouselComponent } from './homepage/home-carousel/home-carousel.component';
 import { ProductDetailComponent } from './detailpage/product-detail/product-detail.component';
 import { ProductSuggestionComponent } from './detailpage/product-suggestion/product-suggestion.component';
+import { InfoPanelComponent } from './homepage/side-infos/info-panel/info-panel.component';
 
 const appRoutes: Routes = [
   { path: 'detail/:id', component: DetailpageComponent },
+  { path: 'home', component: HomepageComponent, pathMatch:'full' },
   { path: '', component: HomepageComponent, pathMatch:'full' }
 ];
 
@@ -30,7 +32,8 @@ const appRoutes: Routes = [
     SideInfosComponent,
     HomeCarouselComponent,
     ProductDetailComponent,
-    ProductSuggestionComponent
+    ProductSuggestionComponent,
+    InfoPanelComponent
   ],
   imports: [
     RouterModule.forRoot(
