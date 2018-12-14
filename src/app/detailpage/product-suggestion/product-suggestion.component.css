@@ -1,4 +1,4 @@
-.suggestion-container {
+.container-suggestion {
     border-color: gray;
     border-style: solid;
     border-width: 1px;
@@ -6,12 +6,12 @@
     margin-bottom: 10px;
 }
 
-.suggestion-title {
+.title-suggestion {
     margin-top: 10px;
     margin-left: 10px;
 }
 
-.suggestion-list {
+.container-suggestion-list {
     margin-top: 15px;
     margin-left: 10px;
 }

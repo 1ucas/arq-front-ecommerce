@@ -1,8 +1,8 @@
-.thumbnail {
+.container-thumbnail {
     position: relative;
 }
 
-.caption {
+.container-caption {
     position: absolute;
     top: 55%;
     left: 0;
