@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ProductItem } from '../homepage/product-list/product-item/product-item';
 import { ActivatedRoute } from '@angular/router';
+import { ProductService } from '../services/product.service';
 
 @Component({
   selector: 'app-detailpage',
@@ -13,13 +14,11 @@ export class DetailpageComponent implements OnInit {
 
   private sub: any;
 
-  constructor(private route: ActivatedRoute) {
-    this.produto = new ProductItem();
-  }
+  constructor(private route: ActivatedRoute) {}
 
   ngOnInit() {
     this.sub = this.route.params.subscribe(params => {
-       this.produto.id = params['id'];
+       this.produto = new ProductService().GetProducts().filter((el) => { return el.id == params['id']})[0];
     });
   }
 

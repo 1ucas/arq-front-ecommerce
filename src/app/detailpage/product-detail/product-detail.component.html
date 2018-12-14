@@ -1,3 +1,30 @@
-<p>
-  product-detail works!
-</p>
+<div class="row product-detail-container">
+  <div class="col-xs-12">
+    <div class="row">
+      <div class="col-xs-12">
+        <h3>{{produto.titulo}}</h3>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+          <h5>{{produto.descricao}}</h5>
+        </div>
+      </div>
+    <div class="row">
+      <div class="col-xs-12 label-price-container">
+        <span class="label-price">Preço:
+        </span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <span><span class="product-price">{{produto.valor}}</span>   <label class="label label-danger">Promoção</label></span>
+      </div>
+    </div>
+    <div class="row button-comprar-container">
+        <div class="col-xs-12">
+          <button class="btn btn-success button-comprar">Comprar</button>
+        </div>
+      </div>
+  </div>
+</div>

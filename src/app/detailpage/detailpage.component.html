@@ -1,16 +1,16 @@
 <div class="container-do-lucas">
   <div class="row">
-    <div class="col-xs-6">
-      <img src="../../assets/images/image1.png" class="imagem-produto">
-    </div>  
-    <div class="col-xs-6">
-        <p>Produto - {{produto.id}}</p>
-      </div>
+    <div class="col-xs-4">
+      <img src="https://images-na.ssl-images-amazon.com/images/I/41K99%2BcInvL._SX326_BO1,204,203,200_.jpg" class="imagem-produto">
+    </div>
+    <div class="col-xs-4">
+      <app-product-detail [produto]="produto">
+      </app-product-detail>
+    </div>
   </div>
-  <div class="alert alert-success center-block" role="alert">
-    <strong>Sucesso!</strong> Você comprou o produto.
-  </div>
-  <div class="alert alert-warning center-block" role="alert">
-    <strong>Ops!</strong> Sistema de cartões temporariamente fora do ar.
+  <div class="row">
+    <div class="col-xs-12">
+      <app-product-suggestion [produtoEmCompra]="produto"></app-product-suggestion>
+    </div>
   </div>
 </div>

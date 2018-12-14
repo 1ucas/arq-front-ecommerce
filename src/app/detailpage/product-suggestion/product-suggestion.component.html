@@ -1,0 +1,11 @@
+<div class="suggestion-container">
+  <h4 class="suggestion-title">
+    Quem comprou esse item, também comprou esses:
+  </h4>
+  <div class="row suggestion-list">
+      <div class="col-xs-2" *ngFor="let produto of produtosFiltrados">
+        <app-product-item [produto]="produto">
+        </app-product-item>
+      </div>
+    </div>
+</div>

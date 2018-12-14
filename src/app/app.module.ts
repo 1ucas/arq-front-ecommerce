@@ -12,6 +12,7 @@ import { DetailpageComponent } from './detailpage/detailpage.component';
 import { SideInfosComponent } from './homepage/side-infos/side-infos.component';
 import { HomeCarouselComponent } from './homepage/home-carousel/home-carousel.component';
 import { ProductDetailComponent } from './detailpage/product-detail/product-detail.component';
+import { ProductSuggestionComponent } from './detailpage/product-suggestion/product-suggestion.component';
 
 const appRoutes: Routes = [
   { path: 'detail/:id', component: DetailpageComponent },
@@ -28,7 +29,8 @@ const appRoutes: Routes = [
     DetailpageComponent,
     SideInfosComponent,
     HomeCarouselComponent,
-    ProductDetailComponent
+    ProductDetailComponent,
+    ProductSuggestionComponent
   ],
   imports: [
     RouterModule.forRoot(
