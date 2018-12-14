@@ -17,8 +17,8 @@ import { InfoPanelComponent } from './homepage/side-infos/info-panel/info-panel.
 
 const appRoutes: Routes = [
   { path: 'detail/:id', component: DetailpageComponent },
-  { path: 'home', component: HomepageComponent, pathMatch:'full' },
-  { path: '', component: HomepageComponent, pathMatch:'full' }
+  { path: 'home', component: HomepageComponent, pathMatch: 'full' },
+  { path: '', component: HomepageComponent, pathMatch: 'full' }
 ];
 
 @NgModule({
@@ -38,7 +38,10 @@ const appRoutes: Routes = [
   imports: [
     RouterModule.forRoot(
       appRoutes,
-      { enableTracing: true } // <-- debugging purposes only
+      {
+        enableTracing: false,
+        useHash: true
+      }
     ),
     BrowserModule
   ],
