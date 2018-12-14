@@ -1,6 +1,20 @@
-<div [ngClass]="(information.ehDestaque==true)?'panel panel-primary': (information.ehAlerta==true)? 'panel panel-warning' : 'panel panel-info'">
+<div [ngClass]="(information.ehDestaque==true)?'panel panel-primary': 
+                  (information.ehAlerta==true)? 'panel panel-warning' : 
+                  'panel panel-info'">
   <div class="panel-heading">{{information.titulo}}</div>
   <div class="panel-body">
-    {{information.corpo}}
+    <div *ngIf="information.ehProgress" 
+      class="progress">
+      <div class="progress-bar progress-bar-info" 
+        role="progressbar" 
+        attr.aria-valuenow="{{information.quantidadeProgress}}" 
+        aria-valuemin="0" aria-valuemax="100"
+        style="width: 40%">
+          {{information.quantidadeProgress}}% Atingida
+      </div>
+    </div>
+    <div>
+        {{information.corpo}}
+    </div>
   </div>
 </div>
